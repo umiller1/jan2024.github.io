@@ -20,6 +20,9 @@ img {
   width: 100%;
   object-fit: cover;
 }
+img[src*="images/fact1.png"] {
+  object-fit: contain;
+}
 h1, h2 {
   font-family: 'Abril Fatface';
 }
