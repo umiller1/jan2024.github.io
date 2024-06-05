@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.btn {
+    display: inline-block;
+    background-color: #ffb798;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #111;
+    border: 0.5px solid #ffb798;
+    transition: all 0.5s;
+    &:hover {
+        color: #ffb798;
+        background-color: transparent;
+    }
+}
+.container {
+    width: 90%;
+    margin: 0px auto;
+    max-width: 500px;
+}
+
+h1 {
+    padding: 25px 10%;
+    text-align: center;
+    background-color: #333;
+    color: #ffb798;
+    font-variant: small-caps;
+}
+#intro {
+    height: 88vh;
+    padding: 50px 10%;
+    background: linear-gradient(0deg, #111d, #111d), url(../images/date-bark.jpeg);
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        height: 200px;
+        border-left: 0.5px solid #ffb798;
+        border-top: 0.5px solid #ffb798;
+        display: block;
+    }
+    .flexboxin {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 0px;
+        margin: 10px 0px;
+        p {
+            flex: 1 50%;
+        }
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        margin: 0px 0px 10px 0px;
+        font-size: 0.5rem;
+        border-bottom: 0.5px solid #ffb798;
+        border-left: 0.5px solid #ffb798;
+        color: #ffb798;
+        width: max-content;
+        padding: 5px 25px 5px 5px;
+    }
+    a {
+        margin-top: 25px;
+        position: relative;
+    }
+    hr {
+        border: none;
+        border: 0.5px solid #ffb798;
+        margin-top: 15px;
+        height: 3px;
+        &:first-child {
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+    }
+}
