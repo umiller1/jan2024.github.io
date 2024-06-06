@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.container {
+    width: 90vw;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+header {
+    height: 30vh;
+    background: linear-gradient(0deg, #fffa, #fffa), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    padding-bottom: 25px;
+}

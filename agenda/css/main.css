@@ -150,10 +150,19 @@ main {
       img {
         height: 100%;
         display: block;
+        border: 0.5px solid #111;
+        box-shadow: -2px 2px 0px #111;
       }
     }
+    .txt-cont {
+      background-color: #111b;
+      color: #eee;
+      padding: 25px;
+      border: 0.5px solid #111;
+      box-shadow: 2px 2px 0px #111;
+    }
     h2 {
-      color: #ae0d4d;
+      color: #f2641d;
     }
     p {
       font-size: 1.5rem;
