@@ -1,0 +1,36 @@
+#first-lady {
+    color: #804464;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#first-man {
+    background-color: black;
+    color: azure;
+    font-size: 24px;
+    text-align: right;
+}
+
+#cat {
+    color: red;
+    text-decoration: underline;
+}
+
+#span1 {
+    color: crimson;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#span2 {
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+#span3 {
+    background-color: yellow;
+}
+
+#span4 {
+    text-align: right;
+}
