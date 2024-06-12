@@ -1,0 +1,33 @@
+/* 
+    Shorthand margin/padding can have up to 4 values.
+
+    1 value margin/padding: applies that single value to all 4 sides.
+
+    2 value margin/padding: the first value is applied to the top and bottom,
+    the second value is applied to the left and right.
+
+    3 value margin/padding: the first value is applied to the top, the second 
+    value is applied to the left and right, the third value is applied to the
+    bottom.
+
+    4 value margin/padding: the first value is the top, the second value is 
+    the right, the third is the bottom, the fourth value is the left. 
+*/
+div {
+    border: 10px groove tomato;
+    border-radius: 48px;
+    margin: 24px 0px;
+    padding: 24px 36px;
+    background-color: peachpuff;
+}
+
+p {
+    background-color: thistle;
+    border: 5px solid palevioletred;
+    margin: 25px auto;
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
