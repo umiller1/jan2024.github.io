@@ -1,0 +1,53 @@
+#navbar {
+    text-align: center;
+    padding: 24px;
+    background-color: blue;
+}
+
+/* 
+    Target the element with an id of navbar then go inside of it and target
+    any and all anchors within it.
+*/
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/*
+    Target any and all paragraphs then go inside of them and target any and all
+    anchor elements that exist within.
+*/
+p a {
+    color: teal;
+}
+
+/*
+    Only target a paragraph when it has a class of warning on it.
+*/
+p.warning {
+    color: crimson;
+}
+
+/*
+    Only target a paragraph when it has a class of warning THEN target
+    any and all anchor element within.
+*/
+p.warning a {
+    color: orange;
+}
+
+ul {
+    color: green;
+}
+
+ul a {
+    color: lime;
+}
+
+ul p a {
+    color: purple;
+}
+
+ul div a {
+    color: lightblue;
+}
