@@ -13,41 +13,27 @@
     display: inline-block;
 }
 
-.mauve {
-    background-color: #C25E5E;
-    border-color: #C25E5E;
+.blue {
+    background-color: #3B83BD;
+    border-color: #3B83BD;
 }
 
-.pop-blue {
-    background-color: #00C4FF;
-    border-color: #00C4FF;
+.gold {
+    background-color: #E19E20;
+    border-color: #E19E20;
 }
 
-.lipstick {
-    background-color: #FF7378;
-    border-color: #FF7378;
+.navy {
+    background-color: #002756;
+    border-color: #002756;
 }
 
-.sandalwood {
-    background-color: #F3EED9;
-    border-color: #F3EED9;
+.ivory {
+    background-color: #E6F4F1;
+    border-color: #E6F4F1;
 }
 
-.forest {
-    background-color: #728434;
-    border-color: #728434;
-}
-
-.empty {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.long {
-    padding: 20px 52px;
-}
-
-.lemon {
-    border-radius: 50% 10px 50% 10px;
-    border-style: groove;
+.rando {
+    background-color: #3D8B83;
+    border-color: #3D8B83;
 }
