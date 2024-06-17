@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 /*
     NOTE TO STUDENTS: 
 
@@ -6,3 +7,112 @@
 
     Good luck, and have fun!
 */
+#license {
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 8px 8px 4px #0006;
+    background: linear-gradient(to bottom right, #fdcc73, #ed8c4f);
+}
+#content {
+    vertical-align: top;
+}
+h1 {
+    color: navy;
+    font-size: 60px;
+    margin: 0px;
+}
+
+h4 {
+    background-color: navy;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+    padding: 8px;
+}
+
+#left-side {
+    display: inline-block;
+    width: 65%;
+}
+#right-side {
+    display: inline-block;
+    width: 34%;
+}
+
+div#id-and-expiration div {
+    display: inline-block;
+    color: navy;
+    margin: 8px;
+}
+
+#id-and-expiration div span {
+    color: red;
+    font-weight: bold;
+}
+
+#address {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 9px;
+}
+
+#small-pic-container, #data-fields {
+    display: inline-block;
+}
+
+#small-pic-container img {
+    width: 90px;
+    opacity: 0.5;
+}
+
+#data-left, #data-right {
+    display: inline-block;
+    color: navy;
+    margin: 8px;
+    span {
+        color: red;
+        font-weight: bold;
+    }
+}
+
+#signature {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Ms Madi", cursive;
+}
+
+#right-side img {
+    width: 100%;
+}
+
+#donor-and-real-id {
+    text-align: center;
+    padding-top: 4px;
+}
+
+#donor-and-real-id div {
+    display: inline-block;
+    text-align: right;
+}
+#donor {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-right: 24px;
+}
+
+#real-id {
+    display: inline-block;
+    background-color: gold;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    padding: 4px;
+}
+#real-id i {
+    color: white;
+}
