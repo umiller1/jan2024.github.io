@@ -117,10 +117,10 @@ nav {
 }
 
 #c1 {
+    overflow-x: scroll;
     #carousel {
         display: flex;
         gap: 10px;
-        overflow-x: scroll;
         overflow-y: hidden;
         height: max-content;
         div {
