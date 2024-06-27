@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Staatliches&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #111;
+    color: #efefef;
+    font-size: 1.125rem;
+    h1, h2, h4 {
+        font-family: "Staatliches", sans-serif;
+    }
+    height: 200vh;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.contain {
+    width: 80vw;
+    max-width: 950px;
+    margin: 0px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: linear-gradient(90deg, #ec008c, #f26323);
+    transition: all 0.5s;
+    &:hover {
+        box-shadow: 
+            -5px 0px 20px #ec008c,
+            5px 0px 20px #f26323,
+            inset 0px 0px 10px #fff5
+        ;
+    }
+}
+
+/* NAVIGATION STYLES */
+header {
+    position: relative;
+    nav {
+        position: sticky;
+        top: 0px;
+    }
+}
+nav a {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+}
+#top {
+    background: linear-gradient(90deg, #ec008c, #f26323);
+    .contain {
+        display: flex;
+        gap: 25px;
+    }
+    a {
+        font-size: 1rem;
+        padding: 10px 0px;
+    }
+    a:first-child {
+        margin-right: auto;
+    }
+}
+#bottom {
+    background-color: #1115;
+    backdrop-filter: blur(25px);
+    .contain {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    a {
+        padding: 15px 0px;
+        &:first-child {
+            margin-right: auto;
+            img {
+                width: 6rem;
+            }
+        }
+    }
+}

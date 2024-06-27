@@ -1,0 +1,28 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+.card-style-3 {
+    background-color: #EDEDED;
+    border: 16px solid gold;
+    border-radius: 12px;
+    padding: 16px;
+    width: 350px;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    .attack {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px 0px;
+        padding: 8px 0px 16px;
+        border-bottom: 2px solid black;
+    }
+}
