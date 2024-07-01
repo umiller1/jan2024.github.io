@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Quicksand:wght@300..700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    color: #111;
+}
+h1, h2 {
+    font-family: "Leckerli One", cursive;
+}
+a {
+    color: #111;
+    text-decoration: none;
+    transition: color 0.5s;
+    &:hover {
+        color: #ff2e54;
+    }
+}
+
+.contain {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    height: 100vh;
+    background:
+        linear-gradient(to bottom, #fff0, #fff0, #fff0, #fff),
+        url(../images/hero.jpg)
+    ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    h1 {
+        font-size: 3rem;
+        span {
+            display: block;
+            color: #ff2e54;
+            font-size: 2.5em;
+        }
+    }
+    p {
+        position: absolute;
+        bottom: 25px;
+        font-size: 5vw;
+        font-weight: 300;
+        color: #111;
+        letter-spacing: 0.25em;
+        font-variant: small-caps;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+main {
+    height: 100vh;
+    padding: 25px 0px;
+    .contain {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 50px;
+        height: 100%;
+        overflow-x: scroll;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 25px;
+        h3 {
+            font-size: 1.25rem;
+            border-bottom: 2px solid #ff2e54;
+        }
+        a {
+            font-size: 1rem;
+            padding-left: 10px;
+        }
+    }
+}
+#gal {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    overflow-y: hidden;
+    gap: 25px;
+    .img-c {
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        a {
+            visibility: hidden;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(15px);
+            background-color: #ff2e5455;
+            color: #fff;
+            position: absolute;
+            transition: 0.5s all;
+        }
+        &:hover a {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+footer {
+    border-top: 2px solid #ff2e54;
+}
+footer .contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    gap: 15px;
+    padding: 25px 0px;
+}
