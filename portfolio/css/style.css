@@ -103,12 +103,14 @@ header {
         font-size: 1.5rem;
     }
     h1 {
-        color: #007BA7;
+        color: #fff;
+        mix-blend-mode: difference;
         font-size: 10vw;
         span {
             display: block;
             &:last-child {
                 text-align: right;
+                color: #007BA7;
             }
         }
     }
