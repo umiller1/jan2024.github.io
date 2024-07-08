@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+}
+#nav a {
+    color: white;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.single-col {
+    width: 90vw;
+    max-width: 800px;
+    margin: 48px auto;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.img-c img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.img-c, .content {
+    flex: 1;
+}
+
+.img-c {
+    height: 400px;
+}
+
+.content h1 {
+    font-size: 48px;
+    color: #ffb700;
+}
+
+.featured {
+    background-color: #222;
+    color: white;
+    padding: 24px 0px;
+}
+.featured h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    grid-template-areas:
+        "txt1 img1 img2 img2"
+        "img3 img3 img4 txt2"
+    ;
+}
+#p1 {
+    grid-area: txt1;
+}
+#p2 {
+    grid-area: txt2;
+}
+#img1 {
+    grid-area: img1;
+}
+#img2 {
+    grid-area: img2;
+}
+#img3 {
+    grid-area: img3;
+}
+#img4 {
+    grid-area: img4;
+}
+
+.grid p {
+    border: 2px solid #ffb700;
+    border-radius: 24px;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    #nav {
+        flex-wrap: wrap;
+        a {
+            flex: 50%;
+            text-align: center;
+        }
+    }
+    .intro {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .img-c {
+        flex: 250px;
+        width: 100%;
+        object-position: top;
+    }
+    .content h1 {
+        font-size: 32px;
+        margin: 0px;
+    }
+    .content {
+        text-align: center;
+    }    
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "txt1"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "txt2"
+        ;
+    }
+    .grid p {
+        height: 300px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .intro {
+        gap: 24px;
+    }
+    .content h1 {
+        font-size: 32px;
+    }
+    .img-c {
+        height: 300px;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "txt1 img1"
+            "img2 img2"
+            "img3 img3"
+            "img4 txt2"
+        ;
+    }
+}
