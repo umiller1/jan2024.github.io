@@ -180,6 +180,17 @@ main {
   }
 }
 
+ol li span:first-child {
+  font-weight: 800;
+  color: #001a82;
+}
+ol li span:last-child {
+  display: block;
+  padding-left: 30px;
+}
+#luncho, #submito, #offico {
+  font-weight: 600;
+}
 
 
 @media screen and (max-width: 600px) {
