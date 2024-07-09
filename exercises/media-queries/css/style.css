@@ -211,3 +211,30 @@ a {
 ****************************************************************************/
 
 /* TODO: Add your media query code here */
+@media screen and (max-width: 768px) {
+    #nav, .three-cards, .two-cards {
+        flex-direction: column;
+    }
+    #hero h1 {
+        font-size: 50px;
+    }
+    #hero h3 {
+        font-size: 26px;
+        margin: 0px;
+    }
+    /* Styles below are not necessary but complementary */
+    #nav ul, #nav h2 {
+        margin: 4px 0px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 24px;
+    }
+    .two-cards {
+        margin: 48px 0px;
+        .card {
+            padding: 0px;
+        }
+    }
+}
