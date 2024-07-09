@@ -40,6 +40,7 @@ h2 {
   flex-direction: column;
   gap: 2vh;
   justify-content: space-between;
+  min-height: 100vh;
 }
 header, #attendance, #grid-two .a, #grid-two .b {
   background-color: #edf8ff;
@@ -59,8 +60,9 @@ header {
 
 #grid-two {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 25px;
+  flex: 1;
   #db {
     font-size: 2.5rem;
     text-align: center;
@@ -68,48 +70,64 @@ header {
   .a {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     ol {
       list-style-type: none;
       display: grid;
       grid-template-rows: 1fr 1fr;
       grid-auto-flow: column;
-      gap: 15px;
+      gap: 25px;
       margin: 10px 0px 25px;
       & > li {
         flex: calc(50% - 15px);
         span {
+          display: block;
           font-weight: 700;
-          font-size: 1.25rem;
-          color: #002843;
+          font-size: 1.75rem;
+          color: #df00a7;
+          margin-bottom: 0.5rem;
         }
         li {
           margin-left: 15px;
+          margin-bottom: 10px;
           list-style-type: disc;
+          font-size: 1.5rem;
+          &:last-child {
+            margin-bottom: 0px;
+          }
         }
       }
     }
-    #breaks h2 {
-      font-size: 1.5rem;
-      text-align: center;
-      &:last-child {
-        margin-top: 10px;
-      }
-      span {
-        color: #df00a7;
+    #breaks {
+      margin-top: auto;
+      h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        &:last-child {
+          margin-top: 10px;
+        }
+        span {
+          color: #df00a7;
+        }
       }
     }
   }
   .b {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     .funfact {
+      filter: invert(100%);
       h2 {
         text-align: center;
         font-size: 2.5rem;
+        text-shadow: 3px 4px 0px #edf8ff;
       }
       p {
         margin-bottom: 15px;
+        text-shadow: 2px 2px 5px #edf8ff;
+        font-weight: 600;
       }
     }
     .i-cont {
@@ -121,6 +139,16 @@ header {
       height: 100%;
       box-shadow: 5px 5px 0px #111;
       display: block;
+    }
+    .overlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      color: #edf8ff88;
+      backdrop-filter: blur(10px);
+      z-index: -1;
     }
   }
 }
