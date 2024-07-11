@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+}
+
+#navbar {
+    background-color: violet;
+    display: flex;
+    align-items: center;
+}
+#navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 24px;
+}
+#navbar #logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 0px 24px;
+}
+
+.drop-contain {
+    position: relative;
+}
+.drop-menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+        opacity 0.25s,
+        visibility 0.25s
+    ;
+}
+.drop-contain:hover .drop-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.drop-contain:last-child .drop-menu {
+    right: 0px;
+}
+
+.drop-menu a {
+    background-color: violet;
+    width: 100%;
+    min-width: 200px;
+}
+#navbar .drop-menu a:hover {
+    background-color: purple;
+    color: white;
+}
