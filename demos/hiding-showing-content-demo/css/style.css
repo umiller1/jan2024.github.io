@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card {
+    flex: 300px;
+    border: 3px solid black;
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        border: 3px solid black;
+        padding: 12px;
+        margin-top: 36px;
+    }
+}
+
+#c1:hover {
+    background-color: coral;
+    box-shadow: 4px 4px 4px #0003;
+    transform: translateY(-4px);
+}
+#c1 {
+    transition:
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s
+    ;
+}
+
+#c2:hover a {
+    background-color: firebrick;
+    box-shadow: 4px 4px 4px #0003;
+    transform: translateY(-4px);
+}
+#c2 a {
+    transition:
+        background-color 0.5s,
+        box-shadow 0.5s,
+        transform 0.5s
+    ;
+}
+
+#c3:hover .card-content {
+    opacity: 0;
+    visibility: hidden;
+}
+#c3 .card-content {
+    transition:
+        opacity 0.5s,
+        visibility 0.5s
+    ;
+}
+
+#c4 .card-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+        opacity 2s,
+        visibility 2s,
+        transform 1s
+    ;
+}
+#c4:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+#c5 {
+    position: relative;
+}
+#c5 .card-content {
+    position: absolute;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px #0003;
+    left: 0px;
+    margin: 0px 24px;
+    padding: 24px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-16px);
+    transition:
+        opacity 0.5s,
+        visibility 0.5s,
+        transform 1s
+    ;
+}
+#c5:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
