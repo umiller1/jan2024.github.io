@@ -172,6 +172,7 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
+        align-items: center;
     }
     .content h1 {
         font-size: 4rem;
@@ -179,7 +180,8 @@ nav {
     }
     .card-contain {
         display: flex;
-        z-index: 0;
+        flex-wrap: wrap;
+        gap: 25px;
         .card {
             display: flex;
             flex-direction: column;
@@ -187,18 +189,10 @@ nav {
             border: 2px solid #cc6569;
             border-radius: 15px;
             overflow: hidden;
-            flex: 1;
-            margin-right: -45px;
+            flex: calc(50% - 25px);
             filter: grayscale(100%);
             transition:
-                filter 0.5s,
-                z-index 0.5s,
-                min-width 1s
-            ;
-            transition-delay:
-                filter 0s,
-                z-index 0s,
-                min-width 2s
+                filter 0.5s
             ;
             img {
                 display: block;
@@ -208,20 +202,56 @@ nav {
                 margin: 15px ;
                 text-align: center;
             }
-            &:first-of-type {
-                filter: grayscale(0%);
-            }
-            &:nth-of-type(2n) {
-                z-index: -1;
-            }
-            &:last-of-type {
-                z-index: -2;
-            }
             &:hover {
                 filter: grayscale(0%);
-                min-width: 400px;
-                z-index: 1;
             }
         }
+    }
+}
+
+/* Info cards */
+.info-cards {
+    padding: 80px 0px;
+    .card-contain {
+        display: flex;
+        gap: 25px;
+    }
+    .card {
+        background-color: #cc6569;
+        color: #eee;
+        padding: 25px;
+        border-radius: 15px;
+        border: 2px solid #ffbbbd;
+        flex: 1;
+        h2 {
+            font-size: 1.6rem;
+            margin: 20px 0px 10px;
+        }
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contain {
+        width: 90vw;
+    }
+    nav .contain {
+        flex-direction: column;
+        gap: 10px;
+        .logo {
+            margin: 0px auto;
+            display: block;
+        }
+        a {
+            padding: 10px;
+        }
+    }
+    header {
+        background-position: center;
+    }
+    .hero {
+        height: 99vh;
     }
 }
