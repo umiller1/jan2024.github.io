@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*:lang(ar),  *:lang(ar) * {
+    text-align: right;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #111;
+    background-color: #fefefe;
+}
+nav ul, nav ol {
+    list-style-type: none;
+}
+h1, h2, h3, .logo {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+}
+h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+.contain {
+    width: 95vw;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    text-align: center;
+    border: 0.5px solid #FF8C32;
+    background: 
+        linear-gradient(145deg, #FF8C32 0%, #FF8C32 10%, #fff0 10%, #fff0 90%, #FF8C32 90%, #FF8C32 100%)
+    ;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: #FF8C32;
+    }
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0px;
+    color: #fefefe;
+    backdrop-filter: blur(100px);
+    border-bottom: 0.5px solid #8EFF6B;
+    .d-cont {
+        position: relative;
+        height: 100%;
+        cursor: pointer;
+        padding: 20px 0px;
+        img {
+            width: 3rem;
+        }
+        .d-menu {
+            position: absolute;
+            background-color: #fefefe;
+            box-shadow: -3px 3px 0px 1px #FF8C32;
+            border: 0.5px solid #FF8C32;
+            display: flex;
+            flex-direction: column;
+            min-width: 100px;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-25px);
+            transition:
+                opacity 0.5s,
+                visibility 0.5s,
+                transform 0.5s
+            ;
+            span:lang(ar) {
+                display: block;
+                margin-left: auto;
+            }
+            a {
+                padding: 20px;
+                transition:
+                    background-color 0.5s
+                ;
+            }
+            a:hover {
+                background-color: #FF8C32;
+                color: #fefefe;
+                span:lang(ar) {
+                    color: #fefefe;
+                }
+            }
+        }
+        &:hover img {
+            filter: invert(67%) sepia(38%) saturate(3481%) hue-rotate(337deg) brightness(104%) contrast(101%);
+        }
+        &:hover .d-menu {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    [lang="ar"] {
+        font-size: 0.8rem;
+        text-align: right;
+        color: #aaa;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-weight: 400;
+        transition:
+            color 0.5s
+        ;
+        span:lang(ar) {
+            transition:
+            color 0.5s
+            ;
+        }
+        &:hover {
+            color: #FF8C32;
+            span:lang(ar) {
+                color: #FF8C3255;
+            }
+        }
+    }
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    .logo {
+        margin-right: auto;
+        font-size: 2rem;
+    }
+    .c-number {
+        div{
+            flex-direction: row;
+            align-items: baseline;
+        }
+    }
+}
+
+/* Hero */
+.hero {
+    padding-top: 25px;
+    .img-contain {
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        height: 60vh;
+        div {
+            display: flex;
+            padding: 0px 0px 25px 25px;
+            gap: 25px;
+            img {
+                flex: 1;
+                max-height: 250px;
+                aspect-ratio: 1 / 1;
+                box-shadow: -2px 2px 0px 1px #1115;
+                border: 0.5px solid #1115;
+            }
+        }
+    }
+    hr {
+        margin: 25px auto;
+        max-width: 350px;
+        width: 90%;
+        border: none;
+        border-bottom: 0.5px solid #FF8C32;
+    }
+    .content {
+        width: max-content;
+        margin: 0px auto;
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* FEATURED DISH HOMEPAGE */
+#s1 {
+    margin-top: 80px;
+    background:
+        linear-gradient(to bottom right, #8EFF6B 50%, #fefefe00 50%),
+        url(../images/chickpea-bowl.jpg)
+    ;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    .content {
+        padding: 25px 0px;
+        h4, h2, p {
+            max-width: 500px;
+            width: 40%;
+        }
+        h4 {
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            font-variant: small-caps;
+        }
+        h2 {
+            margin: 10px 0px 15px;
+            font-size: 2rem;
+            a {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                span:lang(ar) {
+                    text-align: center;
+                    color: #333;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+/* HOMEPAGE CARDS */
+#s2 {
+    height: 50vh;
+    min-height: 50vh;
+    display: flex;
+    .card {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        text-align: center;
+        color: #fefefe;
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    }
+    #c1 {
+        background:
+            linear-gradient(0deg, #111d, #111d),
+            url(../images/card1.jpg)
+        ;
+        background-size: cover;
+        background-position: center;
+    }
+    #c2 {
+        background:
+            linear-gradient(0deg, #111d, #111d),
+            url(../images/card2.jpg)
+        ;
+        background-size: cover;
+        background-position: center;
+    }
+    #c3 {
+        background:
+            linear-gradient(0deg, #111d, #111d),
+            url(../images/card3.jpg)
+        ;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: #fefefe;
+    padding: 25px;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    nav {
+        .d-cont {
+            padding: 5px 0px 0px;
+            img {
+                width: 2rem;
+            }
+            .d-menu {
+                left: 50%;
+                transform: translateY(-25px) translateX(-50%);
+            }
+            &:hover .d-menu {
+                transform: translateY(0px) translateX(-50%);
+            }
+        }
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        .logo {
+            margin-left: auto;
+            font-size: 1.5rem;
+        }
+        .c-number {
+            margin-bottom: 10px;
+        }
+    }
+    #s1 {
+        background:
+            linear-gradient(to right, #8EFF6B 50%, #fefefe00 50%),
+            url(../images/chickpea-bowl.jpg)
+        ;
+        background-size: cover;
+        background-position: center;
+    }
+}
