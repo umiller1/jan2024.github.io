@@ -318,11 +318,31 @@ footer {
             margin-bottom: 10px;
         }
     }
-    .img-contain div {
-        flex-direction: column;
-        img {
-            flex: 1;
-            max-height: 250px;
+    .hero.contain {
+        width: 100%;
+        padding: 0px;
+    }
+    .hero .img-contain {
+        justify-content: center;
+        align-items: center;
+        background-position: bottom right;
+        div {
+            height: max-content;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(0px, 1fr);
+            grid-template-areas: "i1 ." ". i2";
+            padding: 15px;
+            img {
+                height: 100%;
+                width: 100%;
+                &:first-child {
+                    grid-area: i1;
+                }
+                &:last-child {
+                    grid-area: i2;
+                }
+            }
         }
     }
     #s1 {
