@@ -287,9 +287,12 @@ footer {
 @media screen and (max-width: 768px) {
     nav {
         .d-cont {
+            flex: 100%;
             padding: 5px 0px 0px;
             img {
                 width: 2rem;
+                margin: 0px auto;
+                display: block;
             }
             .d-menu {
                 left: 50%;
@@ -301,14 +304,25 @@ footer {
         }
     }
     .nav-links {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
         gap: 15px;
         .logo {
             margin-left: auto;
             font-size: 1.5rem;
+            flex: 100%;
+            text-align: center;
         }
         .c-number {
             margin-bottom: 10px;
+        }
+    }
+    .img-contain div {
+        flex-direction: column;
+        img {
+            flex: 1;
+            max-height: 250px;
         }
     }
     #s1 {
