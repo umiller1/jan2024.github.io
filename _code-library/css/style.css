@@ -1,0 +1,80 @@
+/*
+    NOTES:
+    - Any @import rules must be at the very top of the CSS, even placed before
+    this comment. Any @import rules not found at the top will be ignored by
+    browsers.
+    - Resets are general styles applied to override default settings of the
+    browser to make the styling process easier.
+*/
+/* 0A. Base resets */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+/* 0B. Class resets */
+.single-column-layout {
+    width: 80vw;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* 1. Simple Navigation system with dropdown and 2 levels */
+nav {
+    background-color: #ebe1ff;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    transition: color 0.5s;
+}
+nav a:hover {
+    color: #a72573;
+}
+nav .logo {
+    width: 4rem;
+    margin-right: auto;
+}
+nav #top-lvl, nav #btm-lvl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid #0a004c;
+}
+nav #btm-lvl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #
+
+/* 2. Simple hero with CTA button */
+
+/* 3. Simple media & text layout */
+
+/* 4. Simple four cards layout */
+
+/* 5. Simple two cards layout with images */
+
+/* 6. Simple banner with text and overlayed background image */
+
+/* 7. Simple four column gallery with cropped images */
+
+/* 8. Simple banner with parallax background image and text */
+
+/* 9. Generic two-column page layout with two sticky sidebars */
+
+/* 10. Simple banner with background blur on image */
+
+/* 11. Classic three column footer setup with copyright at the bottom */

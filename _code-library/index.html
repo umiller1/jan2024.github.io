@@ -3,10 +3,272 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Webapge or Website Title Here</title>
+        <!--
+            Unicons icon library link element for line icons from:
+            https://iconscout.com/unicons/free-line-icon-fonts
+        -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
+        <!-- 
+            NOTES:
+            - View CSS for the styles.
+            - The class single-column-layout is a generic singe column page
+            layout container to keep certain contain from touching the edges
+            of the screen.
+            - Copy, paste, and edit the content as below in your files as 
+            needed.
+        -->
+        <!-- 1. Simple Navigation system with dropdown and 2 levels -->
+        <nav>
+            <div class="single-column-layout">
+                <div id="top-lvl">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo-placeholder.svg" alt="alt text.">
+                    </a>
+                    <a href="#">Top Link 1</a>
+                    <a href="#">Top Link 2</a>
+                </div>
+                <div id="btm-lvl">
+                    <a href="#">Btm Link 1</a>
+                    <a href="#">Btm Link 2</a>
+                    <a href="#">Btm Link 3</a>
+                    <a href="#">Btm Link 4</a>
+                    <a href="#">Btm Link 5</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 2. Simple hero with CTA button -->
+        <div id="hero">
+            <div class="hero-content single-column-layout">
+                <h1>This is a Simple hero.</h1>
+                <p>With some optional copy text.</p>
+                <a href="#" class="btn">Button</a>
+            </div>
+        </div>
+
+        <!-- 3. Simple media & text layout -->
+        <div id="sect1">
+            <div class="single-column-layout">
+                <div class="image-container">
+                    <img src="images/media-text-img.svg" alt="alt text here.">
+                </div>
+                <div class="content">
+                    <h2>Simple text here.</h2>
+                    <p>To the left of the image.</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- 4. Simple four cards layout -->
+        <div id="card-container">
+            <div class="single-column-layout">
+                <div class="card">
+                    <h2>Card 1</h2>
+                    <p>
+                        Some simple text here.
+                    </p>
+                    <a href="#" class="btn">Button</a>
+                </div>
+                <div class="card">
+                    <h2>Card 2</h2>
+                    <p>
+                        Some simple text here.
+                    </p>
+                    <a href="#" class="btn">Button</a>
+                </div>
+                <div class="card">
+                    <h2>Card 3</h2>
+                    <p>
+                        Some simple text here.
+                    </p>
+                    <a href="#" class="btn">Button</a>
+                </div>
+                <div class="card">
+                    <h2>Card 4</h2>
+                    <p>
+                        Some simple text here.
+                    </p>
+                    <a href="#" class="btn">Button</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Simple two cards layout with images -->
+        <div id="card-container-2">
+            <div class="single-column-layout">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/card-1-img.jpg" alt="alt text here.">
+                    </div>
+                    <div class="content">
+                        <h2>Card 1</h2>
+                        <a href="#" class="btn">Button</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/card-2-img.jpg" alt="alt text here.">
+                    </div>
+                    <div class="content">
+                        <h2>Card 2</h2>
+                        <a href="#" class="btn">Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Simple banner with text and overlayed background image -->
+        <div id="banner-1" class="banner">
+            <div class="single-column-layout">
+                <h2>Cool banner right?</h2>
+            </div>
+        </div>
+
+        <!-- 7. Simple four column gallery with cropped images -->
+        <div id="gallery">
+            <div class="single-column-layout">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+                <img src="images/gallery-placeholder-img.jpg" alt="alt text.">
+            </div>
+        </div>
+
+        <!-- 8. Simple banner with parallax background image and text -->
+        <div id="banner-2" class="banner">
+            <div class="single-column-layout">
+                <h2>Another Cool banner right?</h2>
+            </div>
+        </div>
+
+        <!-- 9. Generic two-column page layout with two sticky sidebars -->
+         <div id="two-columns">
+            <div class="single-column-layout">
+                <div id="sidebar-column">
+                    <div id="sidebars-container">
+                        <div id="s1" class="sidebar">
+                            <h2>Sidebar Link Set 1</h2>
+                            <div class="sidebar-links">
+                                <a href="#">Sidebar Link 1</a>
+                                <a href="#">Sidebar Link 2</a>
+                                <a href="#">Sidebar Link 3</a>
+                                <a href="#">Sidebar Link 4</a>
+                            </div>
+                        </div>
+                        <div id="s2" class="sidebar">
+                            <h2>Sidebar Link Set 2</h2>
+                            <div class="sidebar-links">
+                                <a href="#">Other Sidebar Link 1</a>
+                                <a href="#">Other Sidebar Link 2</a>
+                                <a href="#">Other Sidebar Link 3</a>
+                                <a href="#">Other Sidebar Link 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-column">
+                    <h1>This is the main column</h1>
+                    <p>
+                        The main content goes in this column.
+                    </p>
+                    <img src="images/two-column-layout-img.jpg" alt="alt text.">
+                    <h2>Fun Story about Jupiter to Fill Up the Space:</h2>
+                    <p>
+                        Eleven Earths could fit across Jupiter’s equator. If 
+                        Earth were the size of a grape, Jupiter would be the 
+                        size of a basketball.
+                    </p>
+                    <p>
+                        Jupiter orbits about 484 million miles (778 million 
+                        kilometers) or 5.2 Astronomical Units (AU) from our Sun 
+                        (Earth is one AU from the Sun).
+                    </p>
+                    <p>
+                        Jupiter rotates once about every 10 hours (a Jovian day)
+                        , but takes about 12 Earth years to complete one orbit 
+                        of the Sun (a Jovian year).
+                    </p>
+                    <p>
+                        Jupiter is a gas giant and so lacks an Earth-like 
+                        surface. If it has a solid inner core at all, it’s 
+                        likely only about the size of Earth.
+                    </p>
+                    <p>
+                        Jupiter's atmosphere is made up mostly of hydrogen (H2) 
+                        and helium (He).
+                    </p>
+                    <p>
+                        Jupiter has more than 75 moons.
+                    </p>
+                    <p>
+                        In 1979 the Voyager mission discovered Jupiter’s faint 
+                        ring system. All four giant planets in our solar system 
+                        have ring systems.
+                    </p>
+                    <p>
+                        Nine spacecraft have visited Jupiter. Seven flew by and 
+                        two have orbited the gas giant. Juno, the most recent, 
+                        arrived at Jupiter in 2016.
+                    </p>
+                    <p>
+                        Jupiter cannot support life as we know it. But some of 
+                        Jupiter's moons have oceans beneath their crusts that 
+                        might support life.
+                    </p>
+                    <p>
+                        Jupiter's Great Red Spot is a gigantic storm that’s 
+                        about twice the size of Earth and has raged for over a 
+                        century.
+                    </p>
+                </div>
+            </div>
+         </div>
+
+        <!-- 10. Simple banner with background blur on image -->
+        <div id="banner-3" class="banner">
+            <div class="single-column-layout">
+                <h2>The coolest banner right?</h2>
+            </div>
+        </div>
+
+        <!-- 11. Classic three column footer setup with copyright at the bottom -->
+         <footer>
+            <div class="single-column-layout">
+                <div class="col-1">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo-placeholder.svg" alt="alt text.">
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="#">Footer Link 1</a>
+                    <a href="#">Footer Link 2</a>
+                    <a href="#">Footer Link 3</a>
+                    <a href="#">Footer Link 4</a>
+                </div>
+                <div class="col-3">
+                    <a href="#">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="uil uil-tumblr"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="copyright" class="single-column-layout">
+                <p>YEAR &copy; All Rights Reserved, Company Name</p>
+            </div>
+         </footer>
+         <!-- End of library. -->
     </body>
 </html>
