@@ -35,26 +35,24 @@ nav a {
     display: inline-block;
     text-decoration: none;
     color: black;
-    padding: 10px 0px;
+    padding: 15px 0px;
     transition: color 0.5s;
 }
 nav a:hover {
     color: #a72573;
 }
 nav .logo {
-    width: 4rem;
+    width: 3.5rem;
     margin-right: auto;
 }
 nav #top-lvl, nav #btm-lvl {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 0.5px solid #0a004c;
+    gap: 25px;
 }
-nav #btm-lvl {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav #top-lvl {
+    border-bottom: 0.5px solid #0a004c;
 }
 
 nav #
