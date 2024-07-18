@@ -407,12 +407,17 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    gap: 25px;
+    align-items: start;
+    gap: 25px 50px;
     padding-bottom: 80px;
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
+    }
+    .grid-header {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
     }
     .card {
         border: 0.5px solid #FF8C32;
@@ -427,8 +432,12 @@ footer {
             padding: 10px;
             background-color: #FF8C32;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
             h2 {
-                margin-bottom: 10px;
                 font-size: 1.125rem;
             }
             h3 {
@@ -516,5 +525,42 @@ footer {
     }
     #s2 {
         flex-direction: column;
+    }
+    #menupage #featured {
+        max-height: none;
+        height: max-content;
+    }
+    #menupage #featured .contain {
+        flex-direction: column;
+        max-height: none;
+        height: max-content;
+        text-align: center;
+        padding: 25px;
+    }
+    #menu .contain {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    #c-favs .card {
+        width: 100%;
+        flex-direction: column;
+        max-height: none;
+        height: auto;
+        padding-right: 0px;
+        text-align: center;
+        .price {
+            padding: 0px 200px 25px;
+        }
+        .i-cont {
+            width: 100%;
+            min-height: 150px;
+            height: 150px;
+            max-height: 150px;
+        }
+    }
+    #menu .contain .grid {
+        grid-template-columns: 1fr;
     }
 }
