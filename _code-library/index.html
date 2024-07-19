@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Webapge or Website Title Here</title>
+        <title>Webpage and/or Website Title Here</title>
         <!--
             Unicons icon library link element for line icons from:
             https://iconscout.com/unicons/free-line-icon-fonts
         -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/mobile-nav.js"></script>
     </head>
     <body>
         <!-- 
@@ -21,7 +22,7 @@
             - Copy, paste, and edit the content as below in your files as 
             needed.
         -->
-        <!-- 1. Simple Navigation system with dropdown and 2 levels -->
+        <!-- 1. Simple Navigation system with 2 levels and a dropdown -->
         <nav>
             <div class="single-column-layout">
                 <div id="top-lvl">
@@ -35,8 +36,20 @@
                     <a href="#">Btm Link 1</a>
                     <a href="#">Btm Link 2</a>
                     <a href="#">Btm Link 3</a>
-                    <a href="#">Btm Link 4</a>
-                    <a href="#">Btm Link 5</a>
+                    <a href="#">
+                        <span><i class="uil uil-shopping-basket"></i></span>
+                        <span>Btm Link 5</span>
+                    </a>
+                    <div class="dropdown-container">
+                        <span><i class="uil uil-user-circle"></i></span>
+                        <span>Btm Link 5</span>
+                        <div class="dropdown-menu">
+                            <a href="#">Dropdown Link 1</a>
+                            <a href="#">Dropdown Link 2</a>
+                            <a href="#">Dropdown Link 3</a>
+                            <a href="#">Dropdown Link 4</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
