@@ -64,12 +64,13 @@ nav #btm-lvl {
     border-top: 0.5px solid #0a004c;
 }
 
-nav #btm-lvl a:nth-child(3) {
+nav #btm-lvl a:nth-child(4) {
     margin-right: auto;
 }
 nav .dropdown-container {
     position: relative;
     padding: 15px 0px;
+    cursor: pointer;
 }
 nav .dropdown-container:hover .dropdown-menu {
     opacity: 1;
@@ -97,27 +98,207 @@ nav .dropdown-menu {
         transform 0.5s
     ;
 }
-
 @media screen and (max-width: 768px) {
     nav .logo {
         width: 2.5rem;
     }
     nav #btm-lvl {
         flex-wrap: wrap;
-        gap: 0px;
+        gap: 10px;
+        padding-top: 15px;
     }
-    nav #btm-lvl a:nth-child(3) {
+    nav #btm-lvl a:not(.dropdown-menu a) {
+        padding: 0px;
+    }
+    nav #btm-lvl a:last-child {
+        padding-bottom: 15px;
+    }
+    nav #btm-lvl a:nth-child(4) {
         margin-right: 0px;
+    }
+}
+@media screen and (max-width: 380px) {
+    nav #btm-lvl, nav #top-lvl {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav .dropdown-menu {
+        top: 100%;
     }
 }
 
 /* 2. Simple hero with CTA button */
+#hero {
+    height: 75vh;
+    background-image: url(../images/simple-hero-img.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero .hero-content {
+    width: max-content;
+}
+#hero h1 {
+    font-size: 3rem;
+}
+#hero p {
+    margin: 10px 0px 25px;
+}
+#hero .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #0a004c;
+    background-color: #0a004c;
+    color: #eee;
+    font-size: 1.25rem;
+    transition:
+        background-color 0.5s,
+        color 0.5s
+    ;
+}
+#hero .btn:hover {
+    background-color: transparent;
+    color: #0a004c;
+}
+@media screen and (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 380px) {
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+    #hero .btn {
+        font-size: 1.125rem;
+    }
+}
 
 /* 3. Simple media & text layout */
+#sect1 {
+    margin: 80px 0px 40px;
+}
+#sect1 .single-column-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 50vh;
+}
+#sect1 .image-container, #sect1 .content {
+    flex: 1;
+}
+#sect1 h2 {
+    border-bottom: 0.5px solid #0a004c;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+@media screen and (max-width: 380px) {
+    #sect1 .single-column-layout {
+        flex-direction: column;
+    }
+    #sect1 .content {
+        flex: 2;
+    }
+    #sect1 h2 {
+        font-size: 1.5rem;
+    }
+}
 
 /* 4. Simple four cards layout */
-
+#card-container {
+    margin: 40px 0px;
+}
+#card-container .single-column-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+#card-container .card {
+    padding: 25px;
+    background-color: #0a004c;
+    color: #eee;
+}
+#card-container p {
+    margin: 10px 0px 25px;
+}
+#card-container .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #ebe1ff;
+    background-color: #ebe1ff;
+    color: #0a004c;
+    font-size: 1.25rem;
+    transition:
+        background-color 0.5s,
+        color 0.5s
+    ;
+}
+#card-container .btn:hover {
+    background-color: transparent;
+    color: #ebe1ff;
+}
+@media screen and (max-width: 768px) {
+    #card-container .single-column-layout {
+        flex-wrap: wrap;
+    }
+    #card-container .card {
+        flex: calc(50% - 25px);
+        text-align: center;
+    }
+}
 /* 5. Simple two cards layout with images */
+#card-container-2 {
+    margin: 40px 0px;
+}
+#card-container-2 .single-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+#card-container-2 .card {
+    border: 0.5px solid #0a004c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+}
+#card-container-2 img {
+    display: block;
+    height: 100%;
+}
+#card-container-2 .content {
+    padding: 15px 15px 15px 0px;
+}
+#card-container-2 .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: 2px solid #0a004c;
+    background-color: #0a004c;
+    color: #eee;
+    font-size: 1.25rem;
+    transition:
+        background-color 0.5s,
+        color 0.5s
+    ;
+}
+#card-container-2 .btn:hover {
+    background-color: transparent;
+    color: #0a004c;
+}
+@media screen and (max-width: 768px) {
+    #card-container .single-column-layout {
+        flex-wrap: wrap;
+    }
+    #card-container .card {
+        flex: calc(50% - 25px);
+        text-align: center;
+    }
+}
 
 /* 6. Simple banner with text and overlayed background image */
 
