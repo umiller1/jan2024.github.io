@@ -266,6 +266,10 @@ nav .dropdown-menu {
     align-items: center;
     gap: 15px;
 }
+#card-container-2 .image-container {
+    min-height: 0px;
+    height: 100%;
+}
 #card-container-2 img {
     display: block;
     height: 100%;
@@ -291,16 +295,13 @@ nav .dropdown-menu {
     color: #0a004c;
 }
 @media screen and (max-width: 768px) {
-    #card-container .single-column-layout {
-        flex-wrap: wrap;
-    }
-    #card-container .card {
-        flex: calc(50% - 25px);
-        text-align: center;
+    #card-container-2 .single-column-layout {
+        grid-template-columns: 1fr;
     }
 }
 
 /* 6. Simple banner with text and overlayed background image */
+
 
 /* 7. Simple four column gallery with cropped images */
 
