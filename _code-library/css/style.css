@@ -301,9 +301,32 @@ nav .dropdown-menu {
 }
 
 /* 6. Simple banner with text and overlayed background image */
-
+#banner-1 {
+    height: 50vh;
+    background:
+        linear-gradient(to top right, #0a004caa, #ebe1ff, #0a004caa),
+        url(../images/banner-img.jpg)
+    ;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    color: #a72573;
+    text-align: center;
+}
 
 /* 7. Simple four column gallery with cropped images */
+#gallery .single-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    gap: 10px;
+    margin: 40px auto;
+}
+#gallery img {
+    min-height: 100%;
+    height: 100%;
+}
 
 /* 8. Simple banner with parallax background image and text */
 
